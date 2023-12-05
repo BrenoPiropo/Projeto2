@@ -1,0 +1,48 @@
+body {
+    background-color: #343a40; /* Azul escuro */
+    color: #fff; /* Texto branco para contrastar */
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+/* Adaptação para dispositivos móveis */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* Divisão da tela */
+.row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px; /* Limitar a largura máxima para evitar que fique muito largo */
+    margin: 0 auto; /* Centralizar dentro da largura máxima */
+}

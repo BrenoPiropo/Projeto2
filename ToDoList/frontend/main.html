@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.8">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+</head>
+<body>
+
+    <div class="container my-5">
+
+        <!--cabeçalho-->
+        <div class="row mb-4">
+            
+            <div class="col">
+                <div class="d-flex justify-content-start">
+                    <img src="assets/images/favicon.png" alt="Logo" class="img-fluid me-3" width="50px">
+                    <h1>Lista de Tarefas</h1>
+                </div>
+            </div>
+            <div class="col text-end">
+                <div class="d-flex justify-content-end">
+                <select id="select_filter" class="form-select w-50 p-2 me-3">
+                    <option value="Todas"></option>
+                    <option value="Nova">Novas Tarefas</option>
+                    <option value="Pendente">Pendentes</option>
+                    <option value="Cancelada">Canceladas</option>
+                    <option value="Concluida">Concluídas</option>
+                </select>
+                <button class="btn btn-primary" id="btn_nova_tarefa"><i class="fa-solid fa-plus me-2"></i>Nova Tarefa</button>
+                </div>
+                
+            </div>
+            <hr class="mt-3">
+            <h4 class="m-0 p-0 text-info"><i class="fa-solid fa-circle-user me-2"></i><span id="username"></span></h4>
+            <hr class="mt-3">
+        </div>    
+
+        <!--aspecto visual de uma tarefa-->
+        <div id="tasks_container"></div>
+
+        <!--total de tarefas-->
+        <div class="row d-none" id="total_tasks">
+            <div class="col">
+                <p>Total de tarefas <span class="text-info"></span></p>
+            </div>
+        </div>
+        
+        <!--sem tarefas-->
+        <div class="row d-none" id="no_tasks">
+            <div class="col text-center">
+                <span class="opacity-50">Não existem tarefas para apresentar</span>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-end align-items-center"><p><button class="btn btn-danger" id="btn_sair"><i class="fa-solid fa-door-open me-2"></i>Sair</button></p></div>
+        <!--footer-->
+        <div class="row mt-3">
+            <div class="col text-center">
+                <hr>
+                <p>Lista de tarefas &copy; 2023</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
